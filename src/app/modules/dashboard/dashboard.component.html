@@ -1,0 +1,39 @@
+<div>
+  <h2>
+    We recommend you to send your patients to<tr>
+  </h2>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="starts-cards">
+  <mat-card fxFlex="25">
+    <app-cards label="North Florida Regional Medical Center" total="200" pencentage="50"></app-cards>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-cards label="West Florida Hospital" total="100" pencentage="60"></app-cards>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-cards label="AdventHealth Altamonte Springs" total="50" pencentage="75"></app-cards>
+  </mat-card>
+  <mat-card fxFlex="25">
+    <app-cards label="AdventHealth Waterman" total="40" pencentage="90"></app-cards>
+  </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div>
+  <app-widget-area></app-widget-area>
+</div>
+
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="26px">
+  <div fxFlex="60"><app-tables></app-tables></div>
+  <div fxFlex="40">
+    <app-pie [data]="pieChart"></app-pie>
+   </div>
+
+</div>
